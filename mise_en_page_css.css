@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #eef2f7;
+}
+
+/* TITRE */
+.top-header {
+    text-align: center;
+    padding: 25px 10px;
+    background: white;
+}
+
+.top-header h1 {
+    margin: 0;
+    color: #2A7FFF;
+}
+
+/* BARRE MENU */
+.navbar {
+    background: linear-gradient(120deg, #2A7FFF, #27AE60);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    opacity: 0.7;
+}
+
+/* SOUS MENU */
+.menu1 {
+    position: relative;
+}
+
+.menu2 {
+    display: none;
+    position: absolute;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    top: 40px;
+}
+
+.menu1:hover .menu2 {
+    display: block;
+}
+
+.menu2 a {
+    color: #2A7FFF;
+}
+
+/* HERO */
+.hero {
+    height: 60vh;
+    background: linear-gradient(120deg, #2A7FFF, #27AE60);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    clip-path: ellipse(100% 85% at 50% 15%);
+}
+
+/* BLOCS */
+.bloc {
+    background: white;
+    margin: 60px auto;
+    padding: 40px;
+    width: 85%;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.mapframe {
+    width: 100%;
+    height: 600px;
+    border-radius: 15px;
+    border: none;
+}
+
+/* CONTENEUR FLEX */
+.text-carte {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* TEXTE */
+.texte {
+    flex: 1 1 300px;  
+}
+
+/* CARTE */
+.carte-container {
+    flex: 1 1 500px;  
+}
+
+/* CARTE IFRAME */
+.mapframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+
+@media screen and (max-width: 900px) {
+    .text-carte {
+        flex-direction: column;
+    }
+}
+
+.text-carte {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.texte {
+    flex: 1 1 300px;
+}
+
+.carte-container {
+    flex: 1 1 500px;
+}
+
+.mapframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+@media screen and (max-width: 900px) {
+    .text-carte {
+        flex-direction: column;  
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* FOOTER */
+footer {
+    background: #2A7FFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet SIG - Webmapping</title>
+    <link rel="stylesheet" href="mise_en_page_css.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="top-header">
+        <h1>🌍 TD Projet SIG </h1>
+    </div>
+
+    <!-- MENU -->
+    <nav class="navbar">
+        <ul>
+            <li class="menu1">
+                <h4><a href="#carte1">Martinique</a></h4>
+            </li>
+            <li class="menu1">
+                <h4><a href="#carte2">Réunion</a></h4>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+<section class="hero">
+    <h1>TD Introduction - Webmapping </h1>
+    <h2>Comment insérer des cartes dynamiques dans une page web ?</h2>
+</section>
+
+<section class="bloc">
+    <h2>Contexte</h2>
+    <p>Selon l'INSEE, "la grande pauvreté est bien plus fréquente et beaucoup plus intense dans les DOM". Il s'agit ici de comparer la pauvreté des ménages pour la Martinique et la Réunion, qui sont deux départements et régions d'outre-mer français situés dans la mer des Caraïbes et dans l'Océan Indien, respectivement. </p>
+</section>
+
+<!-- ================= CARTE 1 ================= -->
+<section class="bloc carte" id="carte1">
+    <div class="text-carte">
+        
+        <!-- Texte à gauche -->
+        <div class="texte">
+            <h2>Martinique</h2>
+            <p>D'après les données Filosofi, 44 760 ménages étaient pauvres en Martinique sur un total de 149 283, soit environ 30% des ménages. Cette pauvreté est concentrée dans certains quartiers prioritaires de Fort-de-France, mais aussi dans d'autres communes, comme à Sainte-Marie et Le Lamentin. </p>
+        </div>
+
+        <!-- Carte à droite -->
+        <div class="carte-container">
+            <iframe src="qgis2web_rennes2/index.html" class="mapframe"></iframe>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= CARTE 2 ================= -->
+<section class="bloc carte" id="carte2">
+    <div class="text-carte">
+        
+        <!-- Carte à gauche -->
+        <div class="carte-container">
+            <iframe src="qgis2web_reunion/index.html" class="mapframe"></iframe>
+        </div>
+
+        <!-- Texte à droite -->
+        <div class="texte">
+            <h2>La Réunion</h2>
+            <p>La pauvreté des ménages est davantage présente à La Réunion. En effet, 119 672 ménages sur les 322 664 que comptent l'île sont pauvres, soit environ 37%. Cette pauvreté en’est pas répartie de manière uniforme sur l’île. Elle se concentre surtout dans certaines zones du sud, de l’est et dans l’intérieur de l’île, alors que les autres zones côtières sont relativement moins touchées. </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= Conclusion ================= -->
+<section class="bloc carte">
+    <h2><em>Conclusion</em></h2>
+    <h4>La pauvreté est une problématique particulièrement importante en Martinique et à la Réunion. Il est essentiel de mettre en place des politiques et des actions pour réduire les inégalités et améliorer les conditions de vie des populations. </h4>
+</section>
+
+<footer>
+    <p>© 2026 – LAZIOU Gaëtan</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
